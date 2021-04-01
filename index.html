@@ -53,7 +53,7 @@
       </div>
     </header>
     <section class="smoothies">
-      <h1>What are these smoothies?</h1>
+      <h2>What are these smoothies?</h2>
       <p>
         A smoothie is a drink made from pureed raw fruit, vegetables, and
         sometimes dairy products (milk, yogurt, ice-cream or cottage cheese),
@@ -79,11 +79,11 @@
       <div>
         <h2>What makes Smoothie an <span>awesome drink?</span></h2>
         <ul>
-          <li>Crunchy Puffs Te xture</li>
-          <li>100 Calories per drink</li>
-          <li>4g Plant Protein</li>
-          <li>Good source of Magnesium & Vitamin B6</li>
-          <li>No Sugar in our Savory Flavors</li>
+          <li>Crunchy Puffs <span>Te xture</span></li>
+          <li>100 Calories <span>per drink</span></li>
+          <li><span>4g Plant Protein</span></li>
+          <li><span>Good source of</span> Magnesium & Vitamin B6</li>
+          <li>No Sugar <span>in our Savory Flavors</span></li>
           <li>Non-GMO, Vegan & Paleo</li>
           <li>Gluten-Free & Grain-Free</li>
           <li>Corn-Free & Soy-Free</li>
@@ -94,22 +94,22 @@
     <section class="products">
         <div>
           <img src="#" alt="Dark Chocolate" />
-          <span>Dark Chocolate 100 ml</span>
+          <h4>Dark Chocolate <span>100 ml</span></h4>
           <button>Buy</button>
         </div>
         <div>
           <img src="#" alt="Vegan Lettuce" />
-          <span>Vegan Lettuce 100 ml</span>
+          <h4>Vegan Lettuce <span>100 ml</span></h4>
           <button>Buy</button>
         </div>
         <div>
           <img src="#" alt="Lemon Ginder" />
-          <span>Lemon Ginder 100 ml</span>
+          <h4>Lemon Ginder <span>100 ml</span></h4>
           <button>Buy</button>
         </div>
         <div>
           <img src="#" alt="Turmeric Garlic" />
-          <span>Turmeric Garlic 100 ml</span>
+          <h4>Turmeric Garlic <span>100 ml</span></h4>
           <button>Buy</button>
         </div>
     </section>
@@ -128,7 +128,7 @@
     <section class="testimonials">
       <h2>Why clients love us</h2>
       <div>
-        <q> <!-- див параграф+картинка -->
+        <q>
           Smoothie is great. I don't know what else to say. I will let my mum
           know about this, she could really make use of Smoothie! Smoothie saved
           my business.<cite>- from Santa Monica, CA</cite>
@@ -141,7 +141,10 @@
       </div>
     </section>
     <section class="blog">
-      <h2>Our blog</h2> <!-- img+h2 = div-->
+      <div>
+        <h2>Our blog</h2> 
+        <img src="#" alt="Asafoetida" />
+      </div>
       <article>
         <h3>Asafoetida - the next turmeric?</h3>
         <time datetime="2020-06-16">Jun 16, 2020</time>
@@ -152,15 +155,18 @@
           <a href="#">Read More</a>
         </p>
       </article>
-      <a class="to-instagram"><img src="#" alt="ashasuperfoods" /></a>
     </section>
     <section class="instagram">
       <div>
-        <img src="#" alt="" /> <!-- img+div-->
-        <img src="#" alt="" />
-        <img src="#" alt="" />
-        <img src="#" alt="" />
-        <img src="#" alt="" />
+        <img src="#" alt="ashasuperfoods" />
+        <h2>ashasuperfoods</h2>
+      </div>
+      <div>
+        <div><img src="#" alt="" /></div>
+        <div><img src="#" alt="" /></div>
+        <div><img src="#" alt="" /></div>
+        <div><img src="#" alt="" /></div>
+        <div><img src="#" alt="" /></div>
       </div>
     </section>
     <section class="footer">
@@ -170,48 +176,51 @@
         </a>
         <div class="information">
           <h4>Information</h4>
-          <ul>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
+          <div>
+            <a href="#">Search</a>
+            <a href="#">Contact us</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
         </div>
         <div class="payment">
           <h4>Payment</h4>
-          <ul>
-            <li><img src="#" alt="Amex" /></li>
-            <li><img src="#" alt="iPay" /></li>
-            <li><img src="#" alt="Maestro" /></li>
-            <li><img src="#" alt="Discover" /></li>
-            <li><img src="#" alt="JCB" /></li>
-            <li><img src="#" alt="Mastercard" /></li>
-            <li><img src="#" alt="PayPal" /></li>
-            <li><img src="#" alt="shopify pay" /></li>
-            <li><img src="#" alt="visa" /></li>
-          </ul>
+          <div>
+            <img src="#" alt="Amex" />
+            <img src="#" alt="iPay" />
+            <img src="#" alt="Maestro" />
+            <img src="#" alt="Discover" />
+            <img src="#" alt="JCB" />
+            <img src="#" alt="Mastercard" />
+            <img src="#" alt="PayPal" />
+            <img src="#" alt="shopify pay" />
+            <img src="#" alt="visa" />
+          </div>
         </div>
         <div>
           <h4>Don't miss out!</h4>
-          <button>Subscribe to our newsletter</button><!-- form input-->
+          <form action="#">
+            <input type="email" placeholder="subscribe to our newsletter" required="required">
+            <button>Follow us</button>
+          </form>
           <div class="social">
             <li>
-              <a href="#"><img src="#" alt="" /></a>
+              <a href="#"><img src="#" alt="facebook" /></a>
             </li>
             <li>
-              <a href="#"><img src="#" alt="" /></a>
+              <a href="#"><img src="#" alt="pinterest" /></a>
             </li>
             <li>
-              <a href="#"><img src="#" alt="" /></a>
+              <a href="#"><img src="#" alt="instagram" /></a>
             </li>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="copy">&copy2020. All Rights Reserved.</p>
-        <p>Go top</p>
+        <span class="copy">&copy2020. All Rights Reserved.</span>
+        <span>Go top</span>
       </div>
-      <img src="#" alt="" /> <!--pseudo el-->
+      <a href="#" ></a>
     </section>
     <script src="main.js"></script>
   </body>
