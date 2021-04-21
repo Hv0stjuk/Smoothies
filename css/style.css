@@ -10,7 +10,7 @@
 }
 
 .header {
-  background-image: url(/assets/images/header-bg.png);
+  background-image: url(../assets/images/header-bg.png);
   height: 100vh;
 } 
 
@@ -179,7 +179,7 @@
 }
 
 .header__btn::after {
-  content: url(/assets/images/Arrow-yellow.png);
+  content: url(../assets/images/Arrow-yellow.png);
 }
 
 .smoothies {
@@ -281,7 +281,7 @@ padding-bottom: 100px;
   content: "";
   display: block;
   height: 11px;
-  background-image: url(/assets/images/line.png);
+  background-image: url(../assets/images/line.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 365px;
@@ -330,7 +330,7 @@ padding-bottom: 100px;
 }
 
 .about__btn::after {
-  content: url(/assets/images/Arrow-yellow.png);
+  content: url(../assets/images/Arrow-yellow.png);
 }
 
 .products {
@@ -403,7 +403,7 @@ padding-bottom: 100px;
 }
 
 .products__btn::after {
-  content: url(/assets/images/arrow-white.png);
+  content: url(../assets/images/arrow-white.png);
 }
 
 .story {
@@ -458,7 +458,7 @@ padding-bottom: 100px;
 }
 
 .story__btn::after {
-  content: url(/assets/images/Arrow-yellow.png);
+  content: url(../assets/images/Arrow-yellow.png);
 }
 
 .story__img-wrapper {
@@ -470,7 +470,7 @@ padding-bottom: 100px;
   display: block;
   height: 215px;
   width: 290px;
-  background-image: url(/assets/images/stamp.png);
+  background-image: url(../assets/images/stamp.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -562,7 +562,7 @@ padding-bottom: 100px;
 .blog__title-wrapper::after {
   content: "";
   display: block;
-  background-image: url(/assets/images/line_yellow.png);
+  background-image: url(../assets/images/line_yellow.png);
   background-repeat: no-repeat;
   height: 13px;
   width: 690px;
@@ -639,7 +639,7 @@ padding-bottom: 100px;
 
 .instagram__title::before {
   content: "";
-  background-image: url(/assets/images/icon_insta.png);
+  background-image: url(../assets/images/icon_insta.png);
   background-repeat: no-repeat;
   display: block;
   height: 26px;
@@ -666,7 +666,7 @@ padding-bottom: 100px;
 .instagram__item::after {
   content: "";
   display: block;
-  background-image: url(/assets/images/icon__insta_white.png);
+  background-image: url(../assets/images/icon__insta_white.png);
   background-repeat: no-repeat;
   height: 26px;
   width: 26px;
@@ -772,7 +772,7 @@ padding-bottom: 100px;
 .footer__form::before {
   content: "";
   background-repeat: no-repeat;
-  background-image: url(/assets/images/subscribe-icon.png);
+  background-image: url(../assets/images/subscribe-icon.png);
   display: block;
   height: 24px;
   width: 24px;
@@ -815,7 +815,7 @@ padding-bottom: 100px;
 .footer__social-wrapper::before {
   content: "";
   display: block;
-  background-image: url(/assets/images/arrow_subscribe.png);
+  background-image: url(../assets/images/arrow_subscribe.png);
   background-repeat: no-repeat;
   height: 55px;
   width: 55px;
