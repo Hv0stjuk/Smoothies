@@ -154,7 +154,7 @@
               />
               <figcaption class="features__name">Gluten-Free</figcaption>
             </figure>
-            <figure class="features__item">
+            <figure class="features__item not">
               <img
                 class="features__img"
                 src="assets/images/features-icon5.png"
@@ -162,7 +162,7 @@
               />
               <figcaption class="features__name">Corn-Free</figcaption>
             </figure>
-            <figure class="features__item">
+            <figure class="features__item not ">
               <img
                 class="features__img"
                 src="assets/images/features-icon6.png"
@@ -170,7 +170,7 @@
               />
               <figcaption class="features__name">Soy-Free</figcaption>
             </figure>
-            <figure class="features__item">
+            <figure class="features__item not">
               <img
                 class="features__img"
                 src="assets/images/features-icon7.png"
@@ -194,34 +194,37 @@
       <img class="about__img" src="assets/images/about-img.png" alt="Summer" />
       <div class="about__content">
         <div class="about__wrapper">
-          <h2 class="about__title title">
-            What makes Smoothie an
-            <span class="about__title--yellow">awesome drink?</span>
-          </h2>
-          <ul class="about__list">
-            <li class="about__item">
-              Crunchy Puffs <span class="about__item--bold">Te xture</span>
-            </li>
-            <li class="about__item">
-              100 Calories <span class="about__item--bold">per drink</span>
-            </li>
-            <li class="about__item">
-              <span class="about__item--bold">4g Plant Protein</span>
-            </li>
-            <li class="about__item">
-              <span class="about__item--bold">Good source of</span> Magnesium &
-              Vitamin B6
-            </li>
-            <li class="about__item">
-              No Sugar
-              <span class="about__item--normal">in our Savory Flavors</span>
-            </li>
-            <li class="about__item">Non-GMO, Vegan & Paleo</li>
-            <li class="about__item">Gluten-Free & Grain-Free</li>
-            <li class="about__item">Corn-Free & Soy-Free</li>
-          </ul>
-          <button class="about__btn btn">About Organic Smoothie</button>
+          <div class="about__intro">
+            <h2 class="about__title title">
+              What makes Smoothie an
+              <span class="about__title--yellow">awesome drink?</span>
+            </h2>
+            <ul class="about__list">
+              <li class="about__item">
+                Crunchy Puffs <span class="about__item--bold">Te xture</span>
+              </li>
+              <li class="about__item">
+                100 Calories <span class="about__item--bold">per drink</span>
+              </li>
+              <li class="about__item">
+                <span class="about__item--bold">4g Plant Protein</span>
+              </li>
+              <li class="about__item">
+                <span class="about__item--bold">Good source of</span> Magnesium &
+                Vitamin B6
+              </li>
+              <li class="about__item">
+                No Sugar
+                <span class="about__item--normal">in our Savory Flavors</span>
+              </li>
+              <li class="about__item">Non-GMO, Vegan & Paleo</li>
+              <li class="about__item">Gluten-Free & Grain-Free</li>
+              <li class="about__item">Corn-Free & Soy-Free</li>
+            </ul>
+            <button class="about__btn btn">About Organic Smoothie</button>
+          </div>
         </div>
+
       </div>
     </section>
     <section class="products">
@@ -295,23 +298,32 @@
       <h2 class="testimonials__title title">
         Why clients <span class="testimonials__title--span">love</span> us?
       </h2>
-      <div class="testimonials__slider">
-        <div class="testimonials__feedback-wrapper">
-          <q class="testimonials__feedback">
-            Smoothie is great. I don't know what else to say. I will let my mum
+      <div class="testimonials__slider slider">
+        <div class="slider__item">
+          <blockquote class="testimonials__feedback">
+            " Smoothie is great. I don't know what else to say. I will let my mum
             know about this, she could really make use of Smoothie! Smoothie
-            saved my business.
+            saved my business. "
             <cite class="testimonials__source">- from Santa Monica, CA</cite>
-          </q>
+          </blockquote>
           <img
             class="testimonials__img"
             src="assets/images/testimonials-avatar.png"
             alt="Avatar"
           />
         </div>
-        <div class="testimonials__slider-control">
-          <div class="testimonials__slider-prev"></div>
-          <div class="testimonials__slider-next"></div>
+        <div class="slider__item">
+          <blockquote class="testimonials__feedback">
+            Smoothie is great. I don't know what else to say. I will let my mum
+            know about this, she could really make use of Smoothie! Smoothie
+            saved my business.
+            <cite class="testimonials__source">- from Santa Monica, CA</cite>
+          </blockquote>
+          <img
+            class="testimonials__img"
+            src="assets/images/testimonials-avatar.png"
+            alt="Avatar"
+          />
         </div>
       </div>
     </section>
@@ -500,11 +512,12 @@
       <div class="footer__bottom">
         <small class="footer__copy copy">&copy2020. All Rights Reserved.</small>
         <div class="footer__up">
-          <button class="up__span">Go top</button>
-          <a class="up__link" href="#"></a>
+          <button class="up__btn btn"></button>
         </div>
       </div>
     </section>
-    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <script src="js/slick.min.js"></script>  
+    <script src="js/main.js"></script>
   </body>
 </html>
