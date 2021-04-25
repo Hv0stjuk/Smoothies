@@ -209,7 +209,6 @@
 
 .features__item {
 	align-items: center;
-	align-items: flex-start;
 	border-color: #f6edde;
 	border-style: solid;
 	border-width: 0px 0px 2px 2px;
