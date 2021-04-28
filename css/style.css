@@ -485,7 +485,7 @@
 }
 
 .testimonials::after {
-	background-image: url(/assets/images/dots.png);
+	background-image: url(../assets/images/dots.png);
 	content: "";
 	display: block;
 	height: 300px;
