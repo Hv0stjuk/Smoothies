@@ -4,3 +4,13 @@ $(document).ready(function(){
     autoplay:false,
   });
 });
+
+function burgerMenu () {
+  const burgerBtn = document.querySelector('.burger__img');
+  burgerBtn.addEventListener('click', () => {
+    document.querySelector('.header__top').classList.toggle('show');
+    document.querySelector('.header__logo').classList.toggle('hidden');
+  });
+}
+
+burgerMenu();

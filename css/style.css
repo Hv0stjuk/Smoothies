@@ -181,6 +181,10 @@
 	display: none;
 }
 
+.burger__menu--show {
+	display: block;
+}
+
 
 .smoothies {
 	padding-bottom: 110px;
@@ -914,9 +918,6 @@
 		max-width: 300px;
 	}
 	
-	.header__top {
-		display: none;
-	}
 
 	.header__logo  {
 		left: 38%;
@@ -935,6 +936,59 @@
 
 	.burger__img {
 		height: 40px;
+	}
+
+	.header__top.show{
+		min-height: 100vh;
+		min-width: 100vw;
+		background-color: #0aa566;
+		position: absolute;
+		left: 0;
+		top: 0;
+		max-width: 100vw;
+		padding: 0 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+	}
+
+	.header__inner{
+		flex-direction: column;
+		margin-top: 130px;
+	}
+
+	.header__nav {
+		margin-top: 70px;
+	}
+
+	.nav__list {
+		flex-direction: column;
+	}
+
+	.nav__item + .nav__item {
+		margin-left: 0px;
+		margin-top: 40px;
+	}
+
+	.social {
+		margin-left: 0px;
+		margin-top: 40px;
+	}
+
+	.header__personal::after {
+		display: none;
+	}
+
+	.header__top {
+		display: none;
+	}
+	
+	.show {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
 	}
 
 	.smoothies {
@@ -1277,6 +1331,59 @@
 		height: 60px;
 	}
 
+	.header__top.show{
+		min-height: 100vh;
+		min-width: 100vw;
+		background-color: #0aa566;
+		position: absolute;
+		left: 0;
+		top: 0;
+		max-width: 100vw;
+		padding: 0 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+	}
+
+	.header__inner{
+		flex-direction: column;
+		margin-top: 130px;
+	}
+
+	.header__nav {
+		margin-top: 70px;
+	}
+
+	.nav__list {
+		flex-direction: column;
+	}
+
+	.nav__item + .nav__item {
+		margin-left: 0px;
+		margin-top: 40px;
+	}
+
+	.social {
+		margin-left: 0px;
+		margin-top: 40px;
+	}
+
+	.header__personal::after {
+		display: none;
+	}
+
+	.header__top {
+		display: none;
+	}
+	
+	.show {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
+	}
+
 	.smoothies {
 		padding: 40px 0 70px;
 	}
@@ -1564,6 +1671,59 @@
 
 	.burger__img {
 		height: 60px;
+	}
+
+	.header__top.show{
+		min-height: 100vh;
+		min-width: 100vw;
+		background-color: #0aa566;
+		position: absolute;
+		left: 0;
+		top: 0;
+		max-width: 100vw;
+		padding: 0 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+	}
+
+	.header__inner{
+		flex-direction: column;
+		margin-top: 130px;
+	}
+
+	.header__nav {
+		margin-top: 70px;
+	}
+
+	.nav__list {
+		flex-direction: column;
+	}
+
+	.nav__item + .nav__item {
+		margin-left: 0px;
+		margin-top: 40px;
+	}
+
+	.social {
+		margin-left: 0px;
+		margin-top: 40px;
+	}
+
+	.header__personal::after {
+		display: none;
+	}
+
+	.header__top {
+		display: none;
+	}
+	
+	.show {
+		display: block;
+	}
+
+	.hidden {
+		display: none;
 	}
 
 	.smoothies {
