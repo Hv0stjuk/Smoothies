@@ -171,10 +171,18 @@
 	o-border-radius: 35px;
 	webkit-border-radius: 35px;
 	width: 280px;
+	position: relative;
 }
 
 .header__btn::after {
-	content: url(../assets/images/Arrow-yellow.png);
+	content: "";
+	display: block;
+	height: 16px;
+	width: 30px;
+	background-image: url(../assets/images/Arrow-yellow.png);
+	position: absolute;
+	top: 28px;
+  right: 20px;
 }
 
 .burger__btn {
@@ -339,10 +347,19 @@
 	o-border-radius: 30px;
 	webkit-border-radius: 30px;
 	width: 380px;
+	position: relative;
 }
 
 .about__btn::after {
-	content: url(../assets/images/Arrow-yellow.png);
+	content: "";
+	display: block;
+	height: 16px;
+	width: 30px;
+	background-image: url(../assets/images/Arrow-yellow.png);
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 15px;
+  right: 10px;
 }
 
 .products__list {
@@ -407,10 +424,20 @@
 	o-border-radius: 30px;
 	webkit-border-radius: 30px;
 	width: 200px;
+	position: relative;
 }
 
 .products__btn::after {
-	content: url(../assets/images/arrow-white.png);
+	content: "";
+	display: block;
+	background-image: url(../assets/images/arrow-white.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 16px;
+	width: 30px;
+  top: 15px;
+  right: 10px;
+
 }
 
 .story {
@@ -466,10 +493,20 @@
 	o-border-radius: 30px;
 	webkit-border-radius: 30px;
 	width: 300px;
+	position: relative;
 }
 
 .story__btn::after {
-	content: url(../assets/images/Arrow-yellow.png);
+	content: "";
+	display: block;
+	background-image: url(../assets/images/Arrow-yellow.png);
+	background-repeat: no-repeat;
+	height: 16px;
+	width: 30px;
+	position: absolute;
+	top: 16px;
+  right: 10px;
+
 }
 
 .story__img-wrapper {
@@ -531,6 +568,7 @@
 	cursor: pointer;
 	font-size: 0;
 	position: absolute;
+	outline: none;
 }
 
 .testimonials__slider .slick-arrow.slick-prev {
