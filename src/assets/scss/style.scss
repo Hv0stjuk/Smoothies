@@ -1,0 +1,21 @@
+@import './components/_header.scss';
+@import './components/_smoothies.scss';
+@import './components/_about.scss';
+@import './components/_products.scss';
+@import './components/_story.scss';
+@import './components/_testimonials.scss';
+@import './components/_blog.scss';
+@import './components/_instagram.scss';
+@import './components/_footer.scss';
+@import './layout/_media.scss';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	cursor: pointer;
+	outline: none;
+}

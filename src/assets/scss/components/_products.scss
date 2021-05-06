@@ -1,0 +1,78 @@
+.products {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__item {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		min-width: 250px;
+		padding-bottom: 80px;
+		padding-top: 130px;
+	}
+
+	&__item:nth-child(1) {
+		background-color: #632b17;
+	}
+
+	&__item:nth-child(2) {
+		background-color: #178670;
+	}
+
+	&__item:nth-child(3) {
+		background-color: #f7ae3b;
+	}
+
+	&__item:nth-child(4) {
+		background-color: #c3471b;
+	}
+
+	&__title {
+		color: white;
+		font-size: 24px;
+		font-weight: bold;
+		margin-top: 35px;
+	}
+
+	&__title--small {
+		color: white;
+		font-size: 20px;
+		font-style: italic;
+		margin-top: 15px;
+	}
+
+	&__btn {
+		align-items: center;
+		background-color: transparent;
+		border: solid 2px white;
+		border-radius: 30px;
+		color: white;
+		display: flex;
+		font-size: 20px;
+		height: 60px;
+		justify-content: space-around;
+		margin-top: 65px;
+		moz-border-radius: 30px;
+		ms-border-radius: 30px;
+		o-border-radius: 30px;
+		webkit-border-radius: 30px;
+		width: 200px;
+		position: relative;
+	}
+
+	&__btn::after {
+		content: "";
+		display: block;
+		background-image: url(/assets/images/arrow-white.png);
+		background-repeat: no-repeat;
+		position: absolute;
+		height: 16px;
+		width: 30px;
+	  top: 15px;
+	  right: 10px;
+	}
+}

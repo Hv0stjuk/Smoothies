@@ -1,0 +1,56 @@
+.instagram {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+
+	&__title {
+		color: #0aa566;
+		font-size: 24px;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		padding-bottom: 45px;
+		position: relative;
+	}
+
+	&__title::before {
+		background-image: url(/assets/images/icon_insta.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		content: "";
+		display: block;
+		height: 26px;
+		left: -36px;
+		position: absolute;
+		top: 2px;
+		width: 26px;
+	}
+
+	&__list {
+		display: flex;
+		padding-bottom: 10px;
+		width: 100%;
+	}
+
+	&__item {
+		display: flex;
+		flex: 0 0 20%;
+		position: relative;
+	}
+
+	&__item::after {
+		background-image: url(/assets/images/icon__insta_white.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		bottom: 20px;
+		content: "";
+		display: block;
+		height: 26px;
+		position: absolute;
+		right: 30px;
+		width: 26px;
+	}
+
+	&__img {
+		width: 100%;
+	}
+}
