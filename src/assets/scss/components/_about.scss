@@ -25,20 +25,18 @@
 	}
 
 	&__title {
+		@include font('Muli', 55px, 800);
 		color: white;
-		font-size: 55px;
 		position: relative;
 	}
 
 	&__title::after {
+		@include pseudo;
 		background-image: url(/assets/images/line.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		content: "";
-		display: block;
 		height: 11px;
 		left: 90px;
-		position: absolute;
 		top: 123px;
 		width: 365px;
 	}
@@ -47,12 +45,15 @@
 		color: #cae941;
 	}
 
+	&__item--normal {
+		@include font('Muli', 21px, 400);
+	}
+
 	&__list {
+		@include font('Muli', 21px, 800);
 		color: white;
 		display: flex;
 		flex-direction: column;
-		font-size: 20px;
-		font-weight: bold;
 		list-style-image: url("/assets/images/marker.png");
 		list-style-position: inside;
 		margin-top: 70px;
@@ -63,18 +64,13 @@
 		margin-top: 20px;
 	}
 
-	&__item--normal {
-		font-weight: normal;
-	}
-
 	&__btn {
+		@include font('Muli', 21px, 800);
 		align-items: center;
 		background-color: #14826f;
 		border: solid 2px #f8b231;
 		border-radius: 30px;
 		color: white;
-		display: flex;
-		font-size: 20px;
 		height: 60px;
 		justify-content: space-around;
 		margin-top: 50px;

@@ -28,13 +28,11 @@
 	}
 
 	&__form::before {
+		@include pseudo;
 		background-image: url(/assets/images/subscribe-icon.png);
 		background-repeat: no-repeat;
-		content: "";
-		display: block;
 		height: 24px;
 		left: 25px;
-		position: absolute;
 		top: 20px;
 		width: 24px;
 	}
@@ -67,14 +65,12 @@
 	}
 
 	&__social-wrapper::before {
+		@include pseudo;
 		background-image: url(/assets/images/arrow_subscribe.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		content: "";
-		display: block;
 		height: 55px;
 		left: 100px;
-		position: absolute;
 		top: -20px;
 		width: 55px;
 	}
@@ -97,7 +93,7 @@
 		justify-content: center;
 	}
 
-	__copy {
+	&__copy {
 		color: #af8a82;
 		font-size: 13px;
 		font-weight: 400;
@@ -108,9 +104,8 @@
 }
 
 .subtitle {
+	@include font('Muli', 26px, 800);
 	color: white;
-	font-size: 26px;
-	font-weight: 800px;
 	letter-spacing: -0.02em;
 }
 
@@ -122,9 +117,8 @@
 	}
 
 	&__link {
+		@include font('Muli', 18px, 700);
 		color: #6d450c;
-		font-size: 18px;
-		font-weight: 700;
 		letter-spacing: -0.02em;
 		line-height: 35px;
 		text-decoration: none;
@@ -137,6 +131,7 @@
 
 .payment {
 	max-width: 210px;
+
 	&__list {
 		align-items: baseline;
 		display: flex;
@@ -149,18 +144,17 @@
 }
 
 ::-webkit-input-placeholder {
+	@include font('Muli', 17px, 700);
 	color: #6d450c;
-	font-size: 17px;
-	font-weight: 700;
 	letter-spacing: -0.02em;
 	padding-left: 60px;
 }
 
 .up__btn {
+	@include font('Muli', 16px, 700);
 	background-color: #f2662f;
 	border: none;
 	bottom: 35px;
-	font-size: 16px;
 	min-height: 50px;
 	min-width: 50px;
 	position: fixed;
@@ -180,13 +174,11 @@
 }
 
 .up__btn::after {
+	@include pseudo;
 	background-image: url(/assets/images/icon_arrow_up.png);
 	background-repeat: no-repeat;
-	content: "";
-	display: block;
 	height: 25px;
 	left: 17px;
-	position: absolute;
 	top: 15px;
 	width: 13px;
 }

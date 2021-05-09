@@ -10,7 +10,7 @@
 		max-width: 1720px;
 	}
 
-	&__top{
+	&__top {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
@@ -29,6 +29,7 @@
 	}
 
 	&__btn {
+		@include font('Muli', 16px, 800);
 		align-items: center;
 		background-color: #0aa566;
 		border: 0;
@@ -48,12 +49,10 @@
 	}
 
 	&__btn::after {
-		content: "";
-		display: block;
+		@include pseudo;
 		height: 16px;
 		width: 30px;
 		background-image: url(/assets/images/Arrow-yellow.png);
-		position: absolute;
 		top: 28px;
 		right: 20px;
 	}
@@ -69,9 +68,8 @@
 	}
 	
 	&__link {
+		@include font('Muli', 16px, 700);
 		color: white;
-		font-size: 16px;
-		font-weight: 700;
 		letter-spacing: 0.02em;
 		text-decoration: none;
 		text-transform: uppercase;

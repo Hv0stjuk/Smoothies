@@ -4,9 +4,8 @@
 	flex-direction: column;
 
 	&__title {
+		@include font('Muli', 24px, 800);
 		color: #0aa566;
-		font-size: 24px;
-		font-weight: 800;
 		letter-spacing: -0.02em;
 		padding-bottom: 45px;
 		position: relative;
@@ -38,14 +37,12 @@
 	}
 
 	&__item::after {
+		@include pseudo;
 		background-image: url(/assets/images/icon__insta_white.png);
 		background-repeat: no-repeat;
 		background-size: contain;
 		bottom: 20px;
-		content: "";
-		display: block;
 		height: 26px;
-		position: absolute;
 		right: 30px;
 		width: 26px;
 	}

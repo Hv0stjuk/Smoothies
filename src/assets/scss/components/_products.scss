@@ -32,27 +32,26 @@
 	}
 
 	&__title {
+		@include font('Muli', 24px, 700);
 		color: white;
-		font-size: 24px;
-		font-weight: bold;
 		margin-top: 35px;
 	}
 
 	&__title--small {
+		@include font('Muli', 24px, 400);
 		color: white;
-		font-size: 20px;
 		font-style: italic;
 		margin-top: 15px;
 	}
 
 	&__btn {
+		@include font('Muli', 21px, 800);
 		align-items: center;
 		background-color: transparent;
 		border: solid 2px white;
 		border-radius: 30px;
 		color: white;
 		display: flex;
-		font-size: 20px;
 		height: 60px;
 		justify-content: space-around;
 		margin-top: 65px;
@@ -65,11 +64,9 @@
 	}
 
 	&__btn::after {
-		content: "";
-		display: block;
+		@include pseudo;
 		background-image: url(/assets/images/arrow-white.png);
 		background-repeat: no-repeat;
-		position: absolute;
 		height: 16px;
 		width: 30px;
 	  top: 15px;

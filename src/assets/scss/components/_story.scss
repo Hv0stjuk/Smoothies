@@ -23,26 +23,25 @@
 	}
 
 	&__title {
+		@include font('Muli', 50px, 800);
 		color: #f7ae3b;
-		font-size: 50px;
 	}
 
 	&__text {
+		@include font('Muli', 18px, 400);
 		color: 1e1;
-		font-size: 18px;
-		font-weight: 400;
 		line-height: 35px;
 		margin-top: 45px;
 	}
 
 	&__btn {
+		@include font('Muli', 21px, 800);
 		align-items: center;
 		background-color: #0aa566;
 		border: none;
 		border-radius: 30px;
 		color: white;
 		display: flex;
-		font-size: 20px;
 		height: 60px;
 		justify-content: space-around;
 		margin-top: 60px;
@@ -55,15 +54,13 @@
 	}
 
 	&__btn::after {
-		content: "";
-		display: block;
+		@include pseudo;
 		background-image: url(/assets/images/Arrow-yellow.png);
 		background-repeat: no-repeat;
 		height: 16px;
 		width: 30px;
-		position: absolute;
 		top: 16px;
-	  right: 10px;
+		right: 10px;
 	}
 
 	&__img-wrapper {
@@ -71,14 +68,12 @@
 	}
 
 	&__img-wrapper::before {
+		@include pseudo;
 		background-image: url(/assets/images/stamp.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		content: "";
-		display: block;
 		height: 215px;
 		left: -171px;
-		position: absolute;
 		top: 130px;
 		width: 290px;
 		z-index: 1;
