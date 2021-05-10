@@ -9,8 +9,7 @@
 		align-items: center;
 		flex-grow: 1;
 		min-width: 250px;
-		padding-bottom: 80px;
-		padding-top: 130px;
+		padding: 130px 0 80px;
 	}
 
 	&__item:nth-child(1) {
@@ -62,11 +61,10 @@
 
 	&__btn::after {
 		@include pseudo;
-		background-image: url(/assets/images/arrow-white.png);
-		background-repeat: no-repeat;
+		background: no-repeat url(/assets/images/arrow-white.png);
 		height: 16px;
 		width: 30px;
-	  top: 15px;
-	  right: 10px;
+		top: 15px;
+		right: 10px;
 	}
 }

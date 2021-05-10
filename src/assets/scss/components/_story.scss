@@ -1,8 +1,7 @@
 
 .story {
 	height: 100%;
-	padding-bottom: 160px;
-	padding-top: 120px;
+	padding: 120px 0 160px;
 	position: relative;
 
 	&__container {
@@ -22,7 +21,7 @@
 
 	&__title {
 		@include font('Muli', 50px, 800);
-		color: #f7ae3b;
+		color: $primary-color;
 	}
 
 	&__text {
@@ -36,7 +35,7 @@
 		@include font('Muli', 21px, 800);
 		@include flex(flex, row, space-around);
 		align-items: center;
-		background-color: #0aa566;
+		background-color: $color-btn;
 		border: none;
 		border-radius: 30px;
 		color: white;
@@ -66,9 +65,7 @@
 
 	&__img-wrapper::before {
 		@include pseudo;
-		background-image: url(/assets/images/stamp.png);
-		background-repeat: no-repeat;
-		background-size: contain;
+		background: no-repeat contain url(/assets/images/stamp.png);
 		height: 215px;
 		left: -171px;
 		top: 130px;

@@ -1,7 +1,5 @@
 .header {
-  background-image: url(/assets/images/header-bg.png);
-  background-position: center;
-  background-size: cover;
+  background: center no-repeat url(/assets/images/header-bg.png);
   height: 100vh;
   padding-top: 70px; }
   .header__container {
@@ -50,9 +48,9 @@
     content: "";
     display: block;
     position: absolute;
+    background: no-repeat url(/assets/images/Arrow-yellow.png);
     height: 16px;
     width: 30px;
-    background-image: url(/assets/images/Arrow-yellow.png);
     top: 28px;
     right: 20px; }
 
@@ -162,8 +160,7 @@
   display: block; }
 
 .smoothies {
-  padding-bottom: 110px;
-  padding-top: 100px; }
+  padding: 100px 0 110px; }
   .smoothies__container {
     margin: auto;
     max-width: 960px; }
@@ -241,9 +238,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/assets/images/line.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: no-repeat contain url(/assets/images/line.png);
     height: 11px;
     left: 90px;
     top: 123px;
@@ -258,9 +253,10 @@
     font-family: "Muli";
     font-size: 21px;
     font-weight: 800;
-    color: white;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    color: white;
     list-style-image: url("/assets/images/marker.png");
     list-style-position: inside;
     margin-top: 70px;
@@ -273,7 +269,7 @@
     font-weight: 800;
     align-items: center;
     background-color: #14826f;
-    border: solid 2px #f8b231;
+    border: solid 2px #f7ae3b;
     border-radius: 30px;
     color: white;
     height: 60px;
@@ -291,8 +287,7 @@
     position: absolute;
     height: 16px;
     width: 30px;
-    background-image: url(/assets/images/Arrow-yellow.png);
-    background-repeat: no-repeat;
+    background: no-repeat url(/assets/images/Arrow-yellow.png);
     top: 15px;
     right: 10px; }
 
@@ -309,8 +304,7 @@
   align-items: center;
   flex-grow: 1;
   min-width: 250px;
-  padding-bottom: 80px;
-  padding-top: 130px; }
+  padding: 130px 0 80px; }
 
 .products__item:nth-child(1) {
   background-color: #632b17; }
@@ -364,8 +358,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/assets/images/arrow-white.png);
-  background-repeat: no-repeat;
+  background: no-repeat url(/assets/images/arrow-white.png);
   height: 16px;
   width: 30px;
   top: 15px;
@@ -373,8 +366,7 @@
 
 .story {
   height: 100%;
-  padding-bottom: 160px;
-  padding-top: 120px;
+  padding: 120px 0 160px;
   position: relative; }
   .story__container {
     margin: 0 auto;
@@ -437,9 +429,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/assets/images/stamp.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: no-repeat contain url(/assets/images/stamp.png);
     height: 215px;
     left: -171px;
     top: 130px;
@@ -455,12 +445,11 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/assets/images/dots.png);
+    background: no-repeat url(/assets/images/dots.png);
     height: 300px;
     right: 50px;
     top: -95px;
-    width: 410px;
-    background-repeat: no-repeat; }
+    width: 410px; }
   .testimonials__title {
     font-family: "Muli";
     font-size: 50px;
@@ -480,16 +469,14 @@
     position: absolute;
     outline: none; }
   .testimonials__slider .slick-arrow.slick-prev {
-    background-image: url("/assets/images/arrow-prev.png");
-    background-repeat: no-repeat;
+    background: no-repeat url(/assets/images/arrow-prev.png);
     bottom: -200px;
     height: 30px;
     left: 45%;
     width: 40px;
     z-index: 2; }
   .testimonials__slider .slick-arrow.slick-next {
-    background-image: url("/assets/images/arrow-next.png");
-    background-repeat: no-repeat;
+    background: no-repeat url(/assets/images/arrow-next.png);
     bottom: -200px;
     height: 30px;
     right: 45%;
@@ -519,10 +506,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background: no-repeat url(/assets/images/sarah_a.png);
   padding-top: 90px;
   align-items: center;
-  background-image: url(/assets/images/sarah_a.png);
-  background-repeat: no-repeat;
   background-position: left 400px bottom 100px; }
 
 .slick-list {
@@ -532,8 +518,7 @@
   display: flex; }
 
 .blog {
-  padding-bottom: 200px;
-  padding-top: 100px; }
+  padding: 100px 0 200px; }
   .blog__container {
     margin: 0 auto;
     max-width: 1200px; }
@@ -547,9 +532,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/assets/images/line_yellow.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: no-repeat contain url(/assets/images/line_yellow.png);
     height: 13px;
     left: 510px;
     top: 165px;
@@ -564,8 +547,7 @@
     margin-top: 50px; }
 
 .article__wrapper {
-  padding-left: 60px;
-  padding-top: 200px; }
+  padding: 200px 0 0 60px; }
 
 .article__title {
   font-family: "Muli";
@@ -582,9 +564,10 @@
   margin-top: 20px; }
 
 .article__text {
-  align-self: flex-end;
+  font-family: "Muli";
   font-size: 18px;
   font-weight: 400;
+  align-self: flex-end;
   line-height: 35px;
   margin-top: 45px; }
 
@@ -613,9 +596,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/assets/images/icon_insta.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: no-repeat contain url(/assets/images/icon_insta.png);
     height: 26px;
     left: -36px;
     top: 2px;
@@ -636,9 +617,7 @@
     content: "";
     display: block;
     position: absolute;
-    background-image: url(/assets/images/icon__insta_white.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: no-repeat contain url(/assets/images/icon__insta_white.png);
     bottom: 20px;
     height: 26px;
     right: 30px;
@@ -676,8 +655,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/assets/images/subscribe-icon.png);
-  background-repeat: no-repeat;
+  background: no-repeat url(/assets/images/subscribe-icon.png);
   height: 24px;
   left: 25px;
   top: 20px;
@@ -694,9 +672,10 @@
   width: 495px; }
 
 .footer__btn {
-  color: #6d450c;
+  font-family: "Muli";
   font-size: 18px;
   font-weight: 800;
+  color: #6d450c;
   letter-spacing: -0.02em;
   text-transform: uppercase; }
 
@@ -713,9 +692,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/assets/images/arrow_subscribe.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  background: no-repeat contain url(/assets/images/arrow_subscribe.png);
   height: 55px;
   left: 100px;
   top: -20px;
@@ -739,9 +716,10 @@
   height: 60px; }
 
 .footer__copy {
-  color: #af8a82;
+  font-family: "Muli";
   font-size: 13px;
   font-weight: 400;
+  color: #af8a82;
   letter-spacing: 0.02em;
   text-align: center; }
 
@@ -774,7 +752,7 @@
   max-width: 210px; }
   .payment__list {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
     flex-wrap: wrap;
@@ -816,8 +794,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url(/assets/images/icon_arrow_up.png);
-  background-repeat: no-repeat;
+  background: no-repeat url(/assets/images/icon_arrow_up.png);
   height: 25px;
   left: 17px;
   top: 15px;

@@ -12,9 +12,7 @@
 
 	&__title::before {
 		@include pseudo();
-		background-image: url(/assets/images/icon_insta.png);
-		background-repeat: no-repeat;
-		background-size: contain;
+		background: no-repeat contain url(/assets/images/icon_insta.png);
 		height: 26px;
 		left: -36px;
 		top: 2px;
@@ -35,9 +33,7 @@
 
 	&__item::after {
 		@include pseudo;
-		background-image: url(/assets/images/icon__insta_white.png);
-		background-repeat: no-repeat;
-		background-size: contain;
+		background: no-repeat contain url(/assets/images/icon__insta_white.png);
 		bottom: 20px;
 		height: 26px;
 		right: 30px;

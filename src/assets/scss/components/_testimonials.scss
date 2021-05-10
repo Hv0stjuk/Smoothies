@@ -1,22 +1,21 @@
 .testimonials {
 	background-color: #672f1b;
 	padding-top: 120px;
-  	min-height: 720px;
+	min-height: 720px;
 	position: relative;
 
 	&::after {
 		@include pseudo;
-		background-image: url(/assets/images/dots.png);
+		background: no-repeat url(/assets/images/dots.png);
 		height: 300px;
 		right: 50px;
 		top: -95px;
 		width: 410px;
-		background-repeat: no-repeat;
 	}
 
 	&__title {
 		@include font('Muli', 50px, 800);
-		color: #f7ae3b;
+		color: $primary-color;
 		text-align: center;
 	}
 
@@ -39,8 +38,7 @@
 	}
 
 	&__slider .slick-arrow.slick-prev {
-		background-image: url("/assets/images/arrow-prev.png");
-		background-repeat: no-repeat;
+		background: no-repeat url(/assets/images/arrow-prev.png);
 		bottom: -200px;
 		height: 30px;
 		left: 45%;
@@ -49,8 +47,7 @@
 	}
 
 	&__slider .slick-arrow.slick-next {
-		background-image: url("/assets/images/arrow-next.png");
-		background-repeat: no-repeat;
+		background: no-repeat url(/assets/images/arrow-next.png);
 		bottom: -200px;
 		height: 30px;
 		right: 45%;
@@ -73,17 +70,16 @@
 
 	&__source {
 		@include font('Muli', 18px, 600);
-		color: #f7ae3b;
+		color: $primary-color;
 		font-style: italic;
 	}
 }
 
 .slider__item {
 	@include flex(flex, row, center);
+	background: no-repeat url(/assets/images/sarah_a.png);
 	padding-top: 90px;
 	align-items: center;
-	background-image: url(/assets/images/sarah_a.png);
-	background-repeat: no-repeat;
 	background-position: left 400px bottom 100px;
 }
 

@@ -31,9 +31,7 @@
 
 	&__title::after {
 		@include pseudo;
-		background-image: url(/assets/images/line.png);
-		background-repeat: no-repeat;
-		background-size: contain;
+		background: no-repeat contain url(/assets/images/line.png);
 		height: 11px;
 		left: 90px;
 		top: 123px;
@@ -50,9 +48,8 @@
 
 	&__list {
 		@include font('Muli', 21px, 800);
+		@include flex (flex, column, flex-start);
 		color: white;
-		display: flex;
-		flex-direction: column;
 		list-style-image: url("/assets/images/marker.png");
 		list-style-position: inside;
 		margin-top: 70px;
@@ -67,7 +64,7 @@
 		@include font('Muli', 21px, 800);
 		align-items: center;
 		background-color: #14826f;
-		border: solid 2px #f8b231;
+		border: solid 2px $primary-color;
 		border-radius: 30px;
 		color: white;
 		height: 60px;
@@ -85,9 +82,8 @@
 		@include pseudo();
 		height: 16px;
 		width: 30px;
-		background-image: url(/assets/images/Arrow-yellow.png);
-		background-repeat: no-repeat;
+		background: no-repeat url(/assets/images/Arrow-yellow.png);
 		top: 15px;
-	  right: 10px;
+		right: 10px;
 	}
 }

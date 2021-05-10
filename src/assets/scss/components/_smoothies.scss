@@ -1,6 +1,5 @@
 .smoothies {
-	padding-bottom: 110px;
-	padding-top: 100px;
+	padding: 100px 0 110px;
 
 	&__container {
 		margin: auto;
@@ -9,7 +8,7 @@
 
 	&__title {
 		@include font('Muli', 50px, 800);
-		color: #f7ae3b;
+		color: $primary-color;
 		text-align: center;
 	}
 
