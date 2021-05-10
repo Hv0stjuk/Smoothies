@@ -12,22 +12,26 @@
 }
 
 .header__top {
-    -ms-flex-align: center;
-    align-items: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
 }
 
 .header__inner {
-    -ms-flex-align: center;
-    align-items: center;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .header__content {
@@ -38,6 +42,9 @@
 }
 
 .header__btn {
+    font-family: "Muli";
+    font-size: 16px;
+    font-weight: 800;
     -ms-flex-align: center;
     align-items: center;
     background-color: #0aa566;
@@ -46,7 +53,6 @@
     color: white;
     display: -ms-flexbox;
     display: flex;
-    font-size: 28px;
     height: 70px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -62,10 +68,10 @@
 .header__btn::after {
     content: "";
     display: block;
+    position: absolute;
     height: 16px;
     width: 30px;
     background-image: url(/assets/images/Arrow-yellow.png);
-    position: absolute;
     top: 28px;
     right: 20px;
 }
@@ -82,9 +88,10 @@
 }
 
 .nav__link {
-    color: white;
+    font-family: "Muli";
     font-size: 16px;
     font-weight: 700;
+    color: white;
     letter-spacing: 0.02em;
     text-decoration: none;
     text-transform: uppercase;
@@ -114,12 +121,12 @@
 }
 
 .personal::after {
-    background-color: white;
     content: "";
     display: block;
+    position: absolute;
+    background-color: white;
     height: 2px;
     left: 205px;
-    position: absolute;
     top: 50%;
     width: 45px;
 }
@@ -217,14 +224,17 @@
 }
 
 .smoothies__title {
-    color: #f7ae3b;
+    font-family: "Muli";
     font-size: 50px;
+    font-weight: 800;
+    color: #f7ae3b;
     text-align: center;
 }
 
 .smoothies__text {
+    font-family: "Muli";
     font-size: 18px;
-    font-weight: 400px;
+    font-weight: 400;
     line-height: 35px;
     margin-top: 55px;
     text-align: center;
@@ -275,8 +285,10 @@
 }
 
 .features__name {
-    color: #f2612d;
+    font-family: "Muli";
     font-size: 25px;
+    font-weight: 800;
+    color: #f2612d;
 }
 
 .about {
@@ -310,20 +322,22 @@
 }
 
 .about__title {
-    color: white;
+    font-family: "Muli";
     font-size: 55px;
+    font-weight: 800;
+    color: white;
     position: relative;
 }
 
 .about__title::after {
+    content: "";
+    display: block;
+    position: absolute;
     background-image: url(/assets/images/line.png);
     background-repeat: no-repeat;
     background-size: contain;
-    content: "";
-    display: block;
     height: 11px;
     left: 90px;
-    position: absolute;
     top: 123px;
     width: 365px;
 }
@@ -332,14 +346,21 @@
     color: #cae941;
 }
 
+.about__item--normal {
+    font-family: "Muli";
+    font-size: 21px;
+    font-weight: 400;
+}
+
 .about__list {
+    font-family: "Muli";
+    font-size: 21px;
+    font-weight: 800;
     color: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 20px;
-    font-weight: bold;
     list-style-image: url("/assets/images/marker.png");
     list-style-position: inside;
     margin-top: 70px;
@@ -350,20 +371,16 @@
     margin-top: 20px;
 }
 
-.about__item--normal {
-    font-weight: normal;
-}
-
 .about__btn {
+    font-family: "Muli";
+    font-size: 21px;
+    font-weight: 800;
     -ms-flex-align: center;
     align-items: center;
     background-color: #14826f;
     border: solid 2px #f8b231;
     border-radius: 30px;
     color: white;
-    display: -ms-flexbox;
-    display: flex;
-    font-size: 20px;
     height: 60px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -428,20 +445,26 @@
 }
 
 .products__title {
-    color: white;
+    font-family: "Muli";
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
+    color: white;
     margin-top: 35px;
 }
 
 .products__title--small {
+    font-family: "Muli";
+    font-size: 24px;
+    font-weight: 400;
     color: white;
-    font-size: 20px;
     font-style: italic;
     margin-top: 15px;
 }
 
 .products__btn {
+    font-family: "Muli";
+    font-size: 21px;
+    font-weight: 800;
     -ms-flex-align: center;
     align-items: center;
     background-color: transparent;
@@ -450,7 +473,6 @@
     color: white;
     display: -ms-flexbox;
     display: flex;
-    font-size: 20px;
     height: 60px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -466,9 +488,9 @@
 .products__btn::after {
     content: "";
     display: block;
+    position: absolute;
     background-image: url(/assets/images/arrow-white.png);
     background-repeat: no-repeat;
-    position: absolute;
     height: 16px;
     width: 30px;
     top: 15px;
@@ -504,19 +526,25 @@
 }
 
 .story__title {
-    color: #f7ae3b;
+    font-family: "Muli";
     font-size: 50px;
+    font-weight: 800;
+    color: #f7ae3b;
 }
 
 .story__text {
-    color: 1e1;
+    font-family: "Muli";
     font-size: 18px;
     font-weight: 400;
+    color: 1e1;
     line-height: 35px;
     margin-top: 45px;
 }
 
 .story__btn {
+    font-family: "Muli";
+    font-size: 21px;
+    font-weight: 800;
     -ms-flex-align: center;
     align-items: center;
     background-color: #0aa566;
@@ -525,7 +553,6 @@
     color: white;
     display: -ms-flexbox;
     display: flex;
-    font-size: 20px;
     height: 60px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -541,11 +568,11 @@
 .story__btn::after {
     content: "";
     display: block;
+    position: absolute;
     background-image: url(/assets/images/Arrow-yellow.png);
     background-repeat: no-repeat;
     height: 16px;
     width: 30px;
-    position: absolute;
     top: 16px;
     right: 10px;
 }
@@ -555,14 +582,14 @@
 }
 
 .story__img-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
     background-image: url(/assets/images/stamp.png);
     background-repeat: no-repeat;
     background-size: contain;
-    content: "";
-    display: block;
     height: 215px;
     left: -171px;
-    position: absolute;
     top: 130px;
     width: 290px;
     z-index: 1;
@@ -576,11 +603,11 @@
 }
 
 .testimonials::after {
-    background-image: url(/assets/images/dots.png);
     content: "";
     display: block;
-    height: 300px;
     position: absolute;
+    background-image: url(/assets/images/dots.png);
+    height: 300px;
     right: 50px;
     top: -95px;
     width: 410px;
@@ -588,9 +615,10 @@
 }
 
 .testimonials__title {
-    color: #f7ae3b;
+    font-family: "Muli";
     font-size: 50px;
     font-weight: 800;
+    color: #f7ae3b;
     text-align: center;
 }
 
@@ -633,12 +661,14 @@
 }
 
 .testimonials__feedback {
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 400;
     color: white;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 18px;
     -ms-flex-pack: center;
     justify-content: center;
     line-height: 35px;
@@ -651,7 +681,11 @@
 }
 
 .testimonials__source {
+    font-family: "Muli";
+    font-size: 18px;
+    font-weight: 600;
     color: #f7ae3b;
+    font-style: italic;
 }
 
 .slider__item {
@@ -681,7 +715,7 @@
     padding-top: 100px;
 }
 
-.blog __container {
+.blog__container {
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -698,23 +732,24 @@
 }
 
 .blog__title-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
     background-image: url(/assets/images/line_yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
-    content: "";
-    display: block;
     height: 13px;
     left: 510px;
-    position: absolute;
     top: 165px;
     width: 690px;
     z-index: -1;
 }
 
 .blog__title {
-    color: #f7ae3b;
+    font-family: "Muli";
     font-size: 50px;
     font-weight: 800;
+    color: #f7ae3b;
 }
 
 .blog__img {
@@ -727,15 +762,17 @@
 }
 
 .article__title {
-    color: #f2612d;
+    font-family: "Muli";
     font-size: 30px;
     font-weight: 800;
+    color: #f2612d;
     letter-spacing: -0.02em;
     text-transform: uppercase;
 }
 
 .article__time {
-    font-size: 16px;
+    font-family: "Muli";
+    font-size: 18px;
     font-weight: 400;
     margin-top: 20px;
 }
@@ -750,10 +787,11 @@
 }
 
 .article__link {
-    color: black;
+    font-family: "Muli";
     font-size: 18px;
-    font-style: italic;
     font-weight: 800;
+    color: black;
+    font-style: italic;
     text-decoration: none;
 }
 
@@ -767,9 +805,10 @@
 }
 
 .instagram__title {
-    color: #0aa566;
+    font-family: "Muli";
     font-size: 24px;
     font-weight: 800;
+    color: #0aa566;
     letter-spacing: -0.02em;
     padding-bottom: 45px;
     position: relative;
@@ -804,14 +843,14 @@
 }
 
 .instagram__item::after {
+    content: "";
+    display: block;
+    position: absolute;
     background-image: url(/assets/images/icon__insta_white.png);
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 20px;
-    content: "";
-    display: block;
     height: 26px;
-    position: absolute;
     right: 30px;
     width: 26px;
 }
@@ -855,13 +894,13 @@
 }
 
 .footer__form::before {
-    background-image: url(/assets/images/subscribe-icon.png);
-    background-repeat: no-repeat;
     content: "";
     display: block;
+    position: absolute;
+    background-image: url(/assets/images/subscribe-icon.png);
+    background-repeat: no-repeat;
     height: 24px;
     left: 25px;
-    position: absolute;
     top: 20px;
     width: 24px;
 }
@@ -896,14 +935,14 @@
 }
 
 .footer__social-wrapper::before {
+    content: "";
+    display: block;
+    position: absolute;
     background-image: url(/assets/images/arrow_subscribe.png);
     background-repeat: no-repeat;
     background-size: contain;
-    content: "";
-    display: block;
     height: 55px;
     left: 100px;
-    position: absolute;
     top: -20px;
     width: 55px;
 }
@@ -931,7 +970,7 @@
     justify-content: center;
 }
 
-.footer __copy {
+.footer__copy {
     color: #af8a82;
     font-size: 13px;
     font-weight: 400;
@@ -940,9 +979,10 @@
 }
 
 .subtitle {
-    color: white;
+    font-family: "Muli";
     font-size: 26px;
-    font-weight: 800px;
+    font-weight: 800;
+    color: white;
     letter-spacing: -0.02em;
 }
 
@@ -955,9 +995,10 @@
 }
 
 .information__link {
-    color: #6d450c;
+    font-family: "Muli";
     font-size: 18px;
     font-weight: 700;
+    color: #6d450c;
     letter-spacing: -0.02em;
     line-height: 35px;
     text-decoration: none;
@@ -985,18 +1026,21 @@
 }
 
 ::-webkit-input-placeholder {
-    color: #6d450c;
+    font-family: "Muli";
     font-size: 17px;
     font-weight: 700;
+    color: #6d450c;
     letter-spacing: -0.02em;
     padding-left: 60px;
 }
 
 .up__btn {
+    font-family: "Muli";
+    font-size: 16px;
+    font-weight: 700;
     background-color: #f2662f;
     border: none;
     bottom: 35px;
-    font-size: 16px;
     min-height: 50px;
     min-width: 50px;
     position: fixed;
@@ -1016,13 +1060,13 @@
 }
 
 .up__btn::after {
-    background-image: url(/assets/images/icon_arrow_up.png);
-    background-repeat: no-repeat;
     content: "";
     display: block;
+    position: absolute;
+    background-image: url(/assets/images/icon_arrow_up.png);
+    background-repeat: no-repeat;
     height: 25px;
     left: 17px;
-    position: absolute;
     top: 15px;
     width: 13px;
 }

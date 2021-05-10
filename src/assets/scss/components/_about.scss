@@ -19,8 +19,7 @@
 	}
 
 	&__intro {
-		display: flex;
-		flex-direction: column;
+		@include flex(flex, column, flex-start);
 		max-width: 600px;
 	}
 
@@ -83,12 +82,10 @@
 	}
 
 	&__btn::after {
-		content: "";
-		display: block;
+		@include pseudo();
 		height: 16px;
 		width: 30px;
 		background-image: url(/assets/images/Arrow-yellow.png);
-		position: absolute;
 		background-repeat: no-repeat;
 		top: 15px;
 	  right: 10px;

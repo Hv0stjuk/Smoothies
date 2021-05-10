@@ -8,8 +8,7 @@
 	}
 
 	&__wrapper {
-		display: flex;
-		justify-content: space-between;
+		@include flex(flex, row, space-between);
 	}
 
 	&__title-wrapper {

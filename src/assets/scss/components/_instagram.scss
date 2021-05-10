@@ -1,7 +1,6 @@
 .instagram {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+	@include flex(flex, column, flex-start);
+	align-items: center;;
 
 	&__title {
 		@include font('Muli', 24px, 800);
@@ -12,26 +11,24 @@
 	}
 
 	&__title::before {
+		@include pseudo();
 		background-image: url(/assets/images/icon_insta.png);
 		background-repeat: no-repeat;
 		background-size: contain;
-		content: "";
-		display: block;
 		height: 26px;
 		left: -36px;
-		position: absolute;
 		top: 2px;
 		width: 26px;
 	}
 
 	&__list {
-		display: flex;
+		@include flex(flex, row, flex-start);
 		padding-bottom: 10px;
 		width: 100%;
 	}
 
 	&__item {
-		display: flex;
+		@include flex(flex, row, flex-start);
 		flex: 0 0 20%;
 		position: relative;
 	}

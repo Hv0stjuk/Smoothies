@@ -25,20 +25,18 @@
 	margin-top: 60px;
 
 	&__list {
-		display: flex;
+	@include flex();
 		flex-wrap: wrap;
 		margin-top: 60px;
 	}
 
 	&__item {
+		@include flex(flex, column, center);
 		align-items: center;
 		border-color: #f6edde;
 		border-style: solid;
 		border-width: 0px 0px 2px 2px;
-		display: flex;
-		flex-direction: column;
 		height: 185px;
-		justify-content: center;
 		width: 240px;
 	}
 

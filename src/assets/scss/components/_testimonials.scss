@@ -60,10 +60,8 @@
 
 	&__feedback {
 		@include font('Muli', 18px, 400);
+		@include flex(flex, column, center);
 		color: white;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		line-height: 35px;
 		max-width: 450px;
 		text-align: center;
@@ -81,13 +79,12 @@
 }
 
 .slider__item {
+	@include flex(flex, row, center);
 	padding-top: 90px;
 	align-items: center;
 	background-image: url(/assets/images/sarah_a.png);
 	background-repeat: no-repeat;
 	background-position: left 400px bottom 100px;
-	display: flex;
-	justify-content: center;
 }
 
 .slick-list {

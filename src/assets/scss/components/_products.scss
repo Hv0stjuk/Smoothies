@@ -1,14 +1,12 @@
 .products {
 	&__list {
-		display: flex;
+		@include flex(flex, row, space-between);
 		flex-wrap: wrap;
-		justify-content: space-between;
 	}
 
 	&__item {
+		@include flex(flex, column, flex-start);
 		align-items: center;
-		display: flex;
-		flex-direction: column;
 		flex-grow: 1;
 		min-width: 250px;
 		padding-bottom: 80px;
@@ -46,14 +44,13 @@
 
 	&__btn {
 		@include font('Muli', 21px, 800);
+		@include flex(flex, row, space-around);
 		align-items: center;
 		background-color: transparent;
 		border: solid 2px white;
 		border-radius: 30px;
 		color: white;
-		display: flex;
 		height: 60px;
-		justify-content: space-around;
 		margin-top: 65px;
 		moz-border-radius: 30px;
 		ms-border-radius: 30px;
