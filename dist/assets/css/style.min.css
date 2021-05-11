@@ -1,4 +1,4 @@
-.about__btn, .products__btn, .story__btn {
+.header__btn, .about__btn, .products__btn, .story__btn {
   cursor: pointer;
   border-radius: 30px;
   -webkit-border-radius: 30px;

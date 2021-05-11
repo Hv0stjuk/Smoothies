@@ -26,6 +26,7 @@
 	&__btn {
 		@include font('Muli', 16px, 800);
 		@include flex(flex, row, space-around);
+		@extend %btn;
 		align-items: center;
 		background-color: $color-btn;
 		border: none;
