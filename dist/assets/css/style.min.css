@@ -1,3 +1,14 @@
+.about__btn, .products__btn, .story__btn {
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: white;
+  outline: none;
+  position: relative; }
+
 .header {
   background: center no-repeat url(/assets/images/header-bg.png);
   height: 100vh;
@@ -29,21 +40,10 @@
     justify-content: space-around;
     align-items: center;
     background-color: #0aa566;
-    border: 0;
-    border-radius: 35px;
-    color: white;
+    border: none;
     height: 70px;
     margin-top: 105px;
-    moz-border-radius: 35px;
-    ms-border-radius: 35px;
-    o-border-radius: 35px;
-    webkit-border-radius: 35px;
-    width: 280px;
-    position: relative;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px; }
+    width: 280px; }
   .header__btn::after {
     content: "";
     display: block;
@@ -270,17 +270,10 @@
     align-items: center;
     background-color: #14826f;
     border: solid 2px #f7ae3b;
-    border-radius: 30px;
-    color: white;
     height: 60px;
     justify-content: space-around;
     margin-top: 50px;
-    moz-border-radius: 30px;
-    ms-border-radius: 30px;
-    o-border-radius: 30px;
-    webkit-border-radius: 30px;
-    width: 380px;
-    position: relative; }
+    width: 380px; }
   .about__btn::after {
     content: "";
     display: block;
@@ -343,16 +336,9 @@
   align-items: center;
   background-color: transparent;
   border: solid 2px white;
-  border-radius: 30px;
-  color: white;
   height: 60px;
   margin-top: 65px;
-  moz-border-radius: 30px;
-  ms-border-radius: 30px;
-  o-border-radius: 30px;
-  webkit-border-radius: 30px;
-  width: 200px;
-  position: relative; }
+  width: 200px; }
 
 .products__btn::after {
   content: "";
@@ -403,16 +389,9 @@
     align-items: center;
     background-color: #0aa566;
     border: none;
-    border-radius: 30px;
-    color: white;
     height: 60px;
     margin-top: 60px;
-    moz-border-radius: 30px;
-    ms-border-radius: 30px;
-    o-border-radius: 30px;
-    webkit-border-radius: 30px;
-    width: 300px;
-    position: relative; }
+    width: 300px; }
   .story__btn::after {
     content: "";
     display: block;

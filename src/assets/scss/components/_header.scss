@@ -28,21 +28,10 @@
 		@include flex(flex, row, space-around);
 		align-items: center;
 		background-color: $color-btn;
-		border: 0;
-		border-radius: 35px;
-		color: white;
+		border: none;
 		height: 70px;
 		margin-top: 105px;
-		moz-border-radius: 35px;
-		ms-border-radius: 35px;
-		o-border-radius: 35px;
-		webkit-border-radius: 35px;
 		width: 280px;
-		position: relative;
-		-webkit-border-radius: 35px;
-		-moz-border-radius: 35px;
-		-ms-border-radius: 35px;
-		-o-border-radius: 35px;
 }
 
 	&__btn::after {

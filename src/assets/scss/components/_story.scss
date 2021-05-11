@@ -34,19 +34,13 @@
 	&__btn {
 		@include font('Muli', 21px, 800);
 		@include flex(flex, row, space-around);
+		@extend %btn;
 		align-items: center;
 		background-color: $color-btn;
 		border: none;
-		border-radius: 30px;
-		color: white;
 		height: 60px;
 		margin-top: 60px;
-		moz-border-radius: 30px;
-		ms-border-radius: 30px;
-		o-border-radius: 30px;
-		webkit-border-radius: 30px;
 		width: 300px;
-		position: relative;
 	}
 
 	&__btn::after {

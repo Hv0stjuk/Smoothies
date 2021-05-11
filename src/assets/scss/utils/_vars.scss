@@ -1,2 +1,14 @@
 $color-btn: #0aa566;
 $primary-color: #f7ae3b;
+
+%btn {
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: white;
+    outline: none;
+    position: relative;
+}
