@@ -51,14 +51,14 @@
 		height: 60px;
 		margin-top: 65px;
 		width: 200px;
-	}
 
-	&__btn::after {
-		@include pseudo;
-		background: no-repeat url(/assets/images/arrow-white.png);
-		height: 16px;
-		width: 30px;
-		top: 15px;
-		right: 10px;
+		&::after {
+			@include pseudo;
+			background: no-repeat url(/assets/images/arrow-white.png);
+			height: 16px;
+			width: 30px;
+			top: 21px;
+			right: 27px;
+	}
 	}
 }
